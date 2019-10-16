@@ -17,21 +17,33 @@ python word2vec_optimized.py 0.025
 In `word2vec_kernels.cc`, you can set the KG training data path, margin and the regularization parameter (they are are coded). E.g.:
 ```
 string train_data_kg_tmp = "../data/freebase_ids_label_without_punctuation_without_duplicates_train_top200kEntities";
+
 float ptranse_margin = 8.f; //pTransE margin
+
 float regulariz_param = 0.002f; //regulariz_param
 ```
 
 
 In `word2vec_optimized.py`, you can set:
+
 -where to save the models: `save_path`
+
 -path where to read the text corpus: `train_data`
+
 -size of text and kg embeddings: `embedding_size`
+
 -number of epochs: `epochs_to_train`
+
 -number of negative samples: `num_neg_samples`
+
 -`batch_size size`:500
+
 -number of threads: `concurrent_steps`
+
 -windows text size: `window_size`
+
 -number of min words count: `min_count`
+
 -subsample from w2v: `subsample`
 
 The learning rate is set as input parameter of the python script:
@@ -39,6 +51,7 @@ The learning rate is set as input parameter of the python script:
 
 NOTE: if you change the text or KG corpuses or min_count, then you have to recreate the anchors!
 To recreate the anchors, go to `word2vec_kernels.cc`, and:
+
 -UNCOMMENT:
 ```
 // std::cout << "build_anchors_kg" << "\n";
@@ -62,14 +75,23 @@ The new anchors will be saved into the folders with all the scripts. Then move t
 
 # Python lib versions
 Python 2.7.12
+
 matplotlib==2.1.2
+
 scipy==1.0.0
+
 six==1.11.0
+
 numpy==1.14.0
+
 tensorflow==1.5.0
+
 tensorflow-tensorboard==1.5.1
+
 nltk==3.2.5
+
 g++ (Ubuntu 5.4.0-6ubuntu1~16.04.10) 5.4.0 20160609
+
 gcc (Ubuntu 5.4.0-6ubuntu1~16.04.10) 5.4.0 20160609
 
 
