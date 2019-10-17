@@ -1,4 +1,7 @@
-# JOINER [Tensorflow]
+# JOINER
+
+JOINER is a joint text and Knowledge Graph embedding method using regularization. JOINER not only preserves co-occurrence between words in a text corpus and relations between entities in a Knowledge Graph, it also provides the flexibility to control the amount of information shared between the two data sources via regularization. This method does not generate additional learning samples, which makes it computationally efficient.
+
 
 Dataset link: https://drive.google.com/open?id=1QRB2lIRfNwphs1I6pAqEC3sT4XoXrLqb
 
