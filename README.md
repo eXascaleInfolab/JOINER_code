@@ -5,6 +5,9 @@ JOINER is a joint text and Knowledge Graph embedding method using regularization
 
 Dataset link: https://drive.google.com/open?id=1QRB2lIRfNwphs1I6pAqEC3sT4XoXrLqb
 
+
+How to compile the code [Tensorflow]
+
 ```
 gcc compute-accuracy_euclidean.c -o compute-accuracy_euclidean
 
@@ -26,6 +29,7 @@ float ptranse_margin = 8.f; //pTransE margin
 float regulariz_param = 0.002f; //regulariz_param
 ```
 
+Parameter tuning:
 
 In `word2vec_optimized.py`, you can set:
 
@@ -75,6 +79,11 @@ std::cout << "\nANCHORS READ\n" << std::flush;
 
 The new anchors will be saved into the folders with all the scripts. Then move the anchors files to `../data`
 
+# Evaluation tasks
+
+-Analogy: `./compute-accuracy emb_text.bin < questions-words_lower.txt` and `./compute-accuracy emb_text.bin < questions-phrases_lower.txt`
+
+-Link prediction: `./Test_TransE_euclidean bern <knowledge_graph_embedding_path>`
 
 # Python lib versions
 Python 2.7.12
