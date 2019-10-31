@@ -112,5 +112,11 @@ gcc (Ubuntu 5.4.0-6ubuntu1~16.04.10) 5.4.0 20160609
 If you found this code or this dataset, please cite:
 
 ```
-XXX
+@inproceedings{XXX,
+  title={Revisiting Text and Knowledge Graph Joint Embeddings: The Amount of Shared Information Matters!},
+  author={Paolo Rosso, Dingqi Yang, and Philippe Cudré-Mauroux},
+  booktitle={2019 IEEE International Conference on Big Data (Big Data)},
+  year={2019},
+  organization={IEEE}
+}
 ```
